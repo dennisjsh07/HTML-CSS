@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .video-container {
+        border-width: 1px;
+        border-style: solid;
+      }
+
+      .thumbnail {
+        width: 100%;
+        display: block;
+      }
+
+      .video-author,
+      .video-stats {
+        display: inline;
+      }
+
+      .info-grid {
+        display: grid;
+        grid-template-columns: 50px 1fr;
+      }
+
+      .profile-container {
+        border-width: 1px;
+        border-style: solid;
+      }
+
+      .info-container {
+        border-width: 1px;
+        border-style: solid;
+      }
+
+      .profile {
+        width: 100%;
+        border-radius: 25px;
+      }
+
+      .video-title {
+        font-weight: bold;
+      }
+
+      p {
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 15px;
+        row-gap: 15px;
+      }
+
+      .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-width: 2px;
+        border-style: solid;
+        border-color: red;
+        height: 55px;
+      }
+
+      .left-section {
+        display: flex;
+        align-items: center;
+        background-color: lightblue;
+      }
+
+      .menu {
+        height: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
+      .youtube-logo {
+        height: 25px;
+      }
+
+      .mid-section {
+        display: flex;
+        background-color: lightcoral;
+        align-items: center;
+        flex: 1;
+        max-width: 500px;
+        margin-left: 70px;
+        margin-right: 35px;
+      }
+
+      .search-bar {
+        flex: 1;
+        height: 36px;
+      }
+
+      .search-btn {
+        height: 40px;
+        width: 50px;
+      }
+
+      .voice-btn {
+        height: 40px;
+        width: 50px;
+      }
+
+      .right-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: lightblue;
+        width: 200px;
+        flex-shrink: 0;
+      }
+
+      .upload-icon{
+        height: 40px;
+        width: 50px;
+      }
+
+      .apps-icon{
+        height: 40px;
+        width: 50px;
+      }
+
+      .notifications-icon{
+        height: 40px;
+        width: 50px;
+      }
+
+      .profile-icon{
+        height: 40px;
+        width: 40px;
+        border-radius: 20px;
+      }
+    </style>
+    <title>Flexbox</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="left-section">
+        <img src="images/hamburger-menu.svg" alt="menu" class="menu" />
+        <img
+          src="images/youtube-logo.svg"
+          alt="youtube-logo"
+          class="youtube-logo"
+        />
+      </div>
+      <div class="mid-section">
+        <input type="text" class="search-bar" />
+        <button class="search-btn">
+          <img src="images/search.svg" alt="" />
+        </button>
+        <button class="voice-btn">
+          <img src="images/voice-search-icon.svg" alt="" />
+        </button>
+      </div>
+      <div class="right-section">
+        <img src="images/upload.svg" class="upload-icon" alt="">
+        <img src="images/youtube-apps.svg" class="apps-icon">
+        <img src="images/notifications.svg" class="notifications-icon">
+        <img src="images/profile.jpeg" class="profile-icon">
+      </div>
+    </div>
+    <div class="grid">
+      <div class="video-container">
+        <div>
+          <img
+            src="images/thumbnail-1.webp"
+            class="thumbnail"
+            alt="thumbnail"
+          />
+        </div>
+        <div class="info-grid">
+          <div class="profile-container">
+            <img src="images/profile.jpeg" alt="" class="profile" />
+          </div>
+          <div class="info-container">
+            <p class="video-title">
+              Talking tech and AI with google ceo sundar pichai
+            </p>
+            <p class="video-author">Dennis joshua .</p>
+            <p class="video-stats">5 million views</p>
+          </div>
+        </div>
+      </div>
+      <div class="video-container">
+        <div>
+          <img
+            src="images/thumbnail-1.webp"
+            class="thumbnail"
+            alt="thumbnail"
+          />
+        </div>
+        <div class="info-grid">
+          <div class="profile-container">
+            <img src="images/profile.jpeg" alt="" class="profile" />
+          </div>
+          <div class="info-container">
+            <p class="video-title">
+              Talking tech and AI with google ceo sundar pichai
+            </p>
+            <p class="video-author">Dennis joshua .</p>
+            <p class="video-stats">5 million views</p>
+          </div>
+        </div>
+      </div>
+      <div class="video-container">
+        <div>
+          <img
+            src="images/thumbnail-1.webp"
+            class="thumbnail"
+            alt="thumbnail"
+          />
+        </div>
+        <div class="info-grid">
+          <div class="profile-container">
+            <img src="images/profile.jpeg" alt="" class="profile" />
+          </div>
+          <div class="info-container">
+            <p class="video-title">
+              Talking tech and AI with google ceo sundar pichai
+            </p>
+            <p class="video-author">Dennis joshua .</p>
+            <p class="video-stats">5 million views</p>
+          </div>
+        </div>
+      </div>
+      <div class="video-container">
+        <div>
+          <img
+            src="images/thumbnail-1.webp"
+            class="thumbnail"
+            alt="thumbnail"
+          />
+        </div>
+        <div class="info-grid">
+          <div class="profile-container">
+            <img src="images/profile.jpeg" alt="" class="profile" />
+          </div>
+          <div class="info-container">
+            <p class="video-title">
+              Talking tech and AI with google ceo sundar pichai
+            </p>
+            <p class="video-author">Dennis joshua .</p>
+            <p class="video-stats">5 million views</p>
+          </div>
+        </div>
+      </div>
+      <div class="video-container">
+        <div>
+          <img
+            src="images/thumbnail-1.webp"
+            class="thumbnail"
+            alt="thumbnail"
+          />
+        </div>
+        <div class="info-grid">
+          <div class="profile-container">
+            <img src="images/profile.jpeg" alt="" class="profile" />
+          </div>
+          <div class="info-container">
+            <p class="video-title">
+              Talking tech and AI with google ceo sundar pichai
+            </p>
+            <p class="video-author">Dennis joshua .</p>
+            <p class="video-stats">5 million views</p>
+          </div>
+        </div>
+      </div>
+      <div class="video-container">
+        <div>
+          <img
+            src="images/thumbnail-1.webp"
+            class="thumbnail"
+            alt="thumbnail"
+          />
+        </div>
+        <div class="info-grid">
+          <div class="profile-container">
+            <img src="images/profile.jpeg" alt="" class="profile" />
+          </div>
+          <div class="info-container">
+            <p class="video-title">
+              Talking tech and AI with google ceo sundar pichai
+            </p>
+            <p class="video-author">Dennis joshua .</p>
+            <p class="video-stats">5 million views</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
